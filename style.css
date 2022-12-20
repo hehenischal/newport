@@ -252,6 +252,16 @@ a:hover i
     {
         display: inline;  
     }
+    .creds {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    margin: 6px;
+    color:red;
+}
+.creds > a {
+    color: white;
+    text-decoration: dotted;
+}
 
 }
 
