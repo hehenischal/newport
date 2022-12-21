@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contant god</title>
+    <link rel='stylesheet' href='font-awesome.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body
+    {
+        padding: 0%;
+        height: 100vh;
+        background-color: black;
+        display: grid;
+        place-items: center;
+    }
 
+    h1
+    {
+        margin-bottom: 2rem;
+    }
+
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        gap: 1rem;
+        align-content: center;
+    }
+
+    input,select,textarea
+    {
+        padding: 1.4rem;
+        background: transparent;
+        border: 1px solid red;
+        border-radius: 5px 5px -0px 0px;
+    }
+    
+    input ,::placeholder
+    {
+        color: rgb(200, 70, 70);
+    }
+    
+    button
+    {
+        background: transparent;
+        color:red;
+        border: 0.5px transparent red;
+        
+    }
+
+</style>
+<body>
+    <div class="info">
+        <h1>Contact Form</h1>
+        <form >
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <select name="Continent" id="">
+                <option>Africa</option>
+                <option>Antarctica</option>
+                <option>Asia</option>
+                <option>Australia</option>
+                <option>Europe</option>
+                <option>North America</option>
+                <option>South America</option>
+            </select>
+            <textarea name="Message" id="" cols=100% rows=10%% placeholder="Message to god" required></textarea>
+            <button type="submit">Pray</button>
+        </form>    
+    </div>
+    
+</body>
+</html>
