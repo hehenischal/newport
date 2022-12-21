@@ -273,6 +273,7 @@ a:hover i
     .webdev 
     {
         display: inline-block;
+        font-weight: 150;
     }
     .slash
     {
