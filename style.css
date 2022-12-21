@@ -9,6 +9,8 @@ body
 
 {
     background: black;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -162,8 +164,17 @@ a:hover i
     {
         display: flex;
         flex-direction: column;
-    
-        overflow-x: hidden;
+        box-sizing: border-box;
+        overflow-x:hidden;
+    }
+    html 
+    {
+        overflow-clip-margin: 100%;
+
+    }
+    head 
+    {
+        height:0px;
     }
     style 
     {
@@ -175,19 +186,34 @@ a:hover i
         height:fit-content;
         float: top;
         overflow-y:hidden;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
     }
     .icons
     {
-        top:0%;
-        margin: none;
-        margin-left:-10%;
+        bottom:0%;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        width: 100%;
+        height: fit-content;
         display: flex;
         flex-direction: row;
+        overflow-y: scroll;
+        
 
     }
     a
     {
         padding-left: 0px;
+        display: block;
+        background:transparent;
+        flex-direction: row;
+
+    }
+    .fab
+    {
+        scale: 50%;
     }
     .main 
     {
@@ -209,6 +235,7 @@ a:hover i
     {
         color: transparent;
         font-size: 1em;
+        
         overflow-x: scroll;
     }
     p:nth-child(1)
@@ -230,9 +257,12 @@ a:hover i
     }
     .info
     {
+        position: absolute;
         font-size: 1em;
+        left:5%;
+        margin:0px;
         display: block;
-        top:100%;
+        top:0%;
     }
     .brace
     {
@@ -254,10 +284,14 @@ a:hover i
         display: inline;  
     }
     .creds {
+    display: block;
+    top:100%;
     font-family: 'Courier New', Courier, monospace;
+    display: block;
     font-size: small;
     margin: 6px;
     color:red;
+    float:left;
 }
 .creds > a {
     color: white;
