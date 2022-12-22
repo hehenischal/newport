@@ -17,7 +17,6 @@ body
 .main
 {
     position: absolute;
-    top:20%;
     left: 58%;
     /* transform: translate(20%,-50%); */
     width: 40%;
@@ -158,6 +157,68 @@ a:hover i
     color: white;
     text-decoration: dotted;
 }
+.main
+    {
+    position: absolute;
+    top:20%;
+    left: 58%;
+    width: 40%;
+    height: 80%;
+    border: 2px solid red;
+    transition: 2s ease-in-out;
+    top:10%;
+    }
+    .ball
+    {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    /* background: rgb(255, 132, 0); */
+    background: green;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    }
+
+    h1
+    {
+        margin-bottom: 2rem;
+    }
+
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        gap: 1rem;
+        align-content: center;
+    }
+
+    input,select,textarea
+    {
+        padding: 1.4rem;
+        background: transparent;
+        border: 1px solid red;
+        border-radius: 5px 5px -0px 0px;
+    }
+    
+    input ,select,::placeholder
+    {
+        color: rgb(200, 70, 70);
+    }
+    
+    textarea:hover
+    {
+        color:red;
+    }
+    
+    button
+    {
+        background: transparent;
+        color:red;
+        border: 0.5px transparent red;
+        
+    }
 
 @media (max-width:1165px)
 {
@@ -218,7 +279,7 @@ a:hover i
     }
     .main 
     {
-        overscroll-behavior:unset;
+        
         display: block;
         float: left;
         width: 90%;

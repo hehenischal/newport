@@ -7,72 +7,130 @@
     <title>Contant god</title>
     <link rel='stylesheet' href='font-awesome.css'>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <style>
     body
     {
-        padding: 0%;
-        height: 100vh;
-        background-color: black;
-        display: grid;
-        place-items: center;
+        height: fit-content;
     }
-
+    .ball
+    {
+        background: blue;
+    }
+    .main:hover .ball>p
+    {
+        font-size: 0px;
+    }
+    
+    .cont
+    {
+        position: absolute;
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        top:10%;
+        left:5%;
+        border: none;
+        height: 80%;
+        width: 40%;
+        padding-left: 2%;
+    }
+    form
+    {
+        padding-left: 3%;
+        padding-right: 5%;
+        width: 100%;
+    }
     h1
     {
-        margin-bottom: 2rem;
+        color: red;
+        align-self: center;
+        font-size: 500%; 
+        margin-top: 0px; 
     }
-
-    form
+    button
+    {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: none;
+        margin-top:8%;
+        font-size: 5em;
+        font-weight:700;
+        transition: 0.5s ease-in-out;
+        
+    }
+    button:hover
+    {
+        color: green;
+    }
+@media (max-width:1165px)
+{
+    html 
     {
         display: flex;
         flex-direction: column;
-        width: 24rem;
-        gap: 1rem;
-        align-content: center;
+    }
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .cont
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        font-size: x-small;
+    }
+    .cont >h1
+    {
+        overflow-x: scroll;
     }
 
-    input,select,textarea
+    .main
     {
-        padding: 1.4rem;
-        background: transparent;
-        border: 1px solid red;
-        border-radius: 5px 5px -0px 0px;
+        position: absolute;
+        top:80%;
+        height: 40%;
     }
-    
-    input ,::placeholder
+    button 
     {
-        color: rgb(200, 70, 70);
+        width: 100%;
+        align-items: center;
     }
-    
-    button
-    {
-        background: transparent;
-        color:red;
-        border: 0.5px transparent red;
-        
-    }
+}
 
 </style>
+    
+
+
 <body>
-    <div class="info">
+    <div class="main">
+        <p> Nischal Lamichhane</p>
+        <div class="ball">
+        <p class="intro"> Hello, I am </p>
+        </div>
+    </div>
+    <div class="cont">
         <h1>Contact Form</h1>
-        <form >
+        <form > 
             <input type="text" name="Name" placeholder="Full Name" required>
             <input type="email" name="Email" placeholder="Email" required>
-            <select name="Continent" id="">
-                <option>Africa</option>
-                <option>Antarctica</option>
-                <option>Asia</option>
-                <option>Australia</option>
-                <option>Europe</option>
-                <option>North America</option>
-                <option>South America</option>
+            <select name="Continent" id="" placeholder="Select Continent">
+                <optgroup label="Continent">
+                    <option>Africa</option>
+                    <option>South America</option>
+                    <option>Antarctica</option>
+                    <option>Asia</option>
+                    <option>Australia</option>
+                    <option>Europe</option>
+                    <option>North America</option>
+            </optgroup>
             </select>
-            <textarea name="Message" id="" cols=100% rows=10%% placeholder="Message to god" required></textarea>
-            <button type="submit">Pray</button>
+            <textarea name="Message" id="" cols=100% rows=10% placeholder="Message to god" required></textarea>
+            <button type="submit">--Pray--</button>
         </form>    
     </div>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
