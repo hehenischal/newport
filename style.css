@@ -262,10 +262,11 @@ a:hover i
         display: flex;
         flex-direction: row;
         overflow-y: scroll;
-        
-
     }
-    a
+    .icons a
+    {
+        background-color: transparent;
+    }
     {
         padding-left: 0px;
         display: block;
@@ -346,7 +347,8 @@ a:hover i
     {
         display: inline;  
     }
-    .creds {
+    .creds
+    {
     display: block;
     bottom:0%;
     font-family: 'Courier New', Courier, monospace;
@@ -355,11 +357,11 @@ a:hover i
     margin: 6px;
     color:red;
     float:left;
-}
-.creds > a {
+    }
+    .creds > a {
     color: white;
     text-decoration: dotted;
-}
+    }
 
 }
 
