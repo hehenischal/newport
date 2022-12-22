@@ -247,7 +247,7 @@ a:hover i
         overflow: hidden;
         height:fit-content;
         float: top;
-        overflow-y:hidden;
+        overflow-y:scroll;
         display: flex;
         flex-direction: column;
         height: fit-content;
