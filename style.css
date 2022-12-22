@@ -254,7 +254,7 @@ a:hover i
     }
     .icons
     {
-        bottom:0%;
+        top:100%;
         justify-content: space-evenly;
         margin-bottom: 40px;
         width: 100%;
