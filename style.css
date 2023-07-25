@@ -1,5 +1,10 @@
+* {
+    margin: none; 
+    padding: none   ;
+}
 body 
 {
+    overflow-x: hidden;
     background-color:   black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -47,4 +52,81 @@ body
     font-size: xx-large;
     align-items: center;
     justify-content: center;
+}
+
+.creds {
+    display: block;
+    bottom: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    font-size: small;
+    margin: 6px;
+    color: red;
+}
+.creds > a {
+    color: white;
+    text-decoration: dotted;
+}
+footer 
+{
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top:100%;
+    align-items: baseline;
+    
+}
+.icons {
+    width: 40%;
+    display: flex;    
+    justify-content: space-around;
+}
+footer >p 
+{
+    text-align: right;
+}
+.color-pink {
+    color:pink
+}
+.works {
+    padding: 10%;
+}
+.color-red {
+    color:red;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+  
+.tech-icons img {
+    /* width: 50px; /* Adjust the size according to your preference 
+    height: 50px; */
+    margin: 10px; /* Add some spacing between the icons */
+    color: red;
+}
+.techstack .projects {
+    padding-left:10px;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+.animated-beat {
+    animation: beat .85s infinite;
+}
+/* make media query for largest of phone display */
+@media screen and (max-width: 480px) {
+    .main 
+    {
+        width: 80%;
+        margin: 10%;
+    }
+
+    
 }
