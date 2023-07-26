@@ -5,8 +5,11 @@
 body 
 {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
     background-color:   black;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .main {
@@ -100,6 +103,7 @@ footer >p
     justify-content: center;
     gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
 }
   
 .tech-icons img {
@@ -122,9 +126,22 @@ footer >p
 }
 /* make media query for largest of phone display */
 @media screen and (max-width: 480px) {
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
     .main 
     {
+        position: absolute;
         width: 80%;
+        margin: 10%;
+    }
+    .info {
+        position: absolute;
+        width:80%;
         margin: 10%;
     }
 
