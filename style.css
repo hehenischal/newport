@@ -36,7 +36,7 @@ body
 .ball {
     position: absolute;
     height: 30px;
-    width: 60px;
+    width: 30px;
     top:10%;
     /* background: rgb(255, 132, 0); */
     background: green;
@@ -104,6 +104,15 @@ footer >p
     gap: 30px;
     align-items: center;
     flex-wrap: wrap;
+}
+
+li>a {
+    color: red;
+    text-decoration: none;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: all 0.5s ease;
 }
   
 .tech-icons img {
