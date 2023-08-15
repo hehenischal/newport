@@ -35,11 +35,11 @@ body
 }
 .ball {
     position: absolute;
-    height: 30px;
-    width: 30px;
-    top:10%;
+    height: 45px;
+    width: 55px;
     /* background: rgb(255, 132, 0); */
-    background: green;
+    background-image: url(icons/icons8-dvd-logo-32.png);
+    background-size: cover;
     border-radius: 50%;
 }
 .info {
