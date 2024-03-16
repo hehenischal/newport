@@ -29,7 +29,7 @@ body
 }
 .main:hover 
 {
-    background-color: red;
+    background-color: #0f0000;
     font-size: xx-large;
     display: flex;
     color:white;   
