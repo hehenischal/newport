@@ -1,4 +1,26 @@
-'use strict';Object.defineProperty(exports,"__esModule",{value:true});exports.supportsMediaSource=exports.Debug=exports.MediaPlayerFactory=exports.MetricsReporting=exports.Protection=exports.MediaPlayer=undefined;var _index_mediaplayerOnly=require('./index_mediaplayerOnly');var _Capabilities=require('./src/streaming/utils/Capabilities');var _MetricsReporting=require('./src/streaming/metrics/MetricsReporting');var _MetricsReporting2=_interopRequireDefault(_MetricsReporting);var _Protection=require('./src/streaming/protection/Protection');var _Protection2=_interopRequireDefault(_Protection);var _MediaPlayerFactory=require('./src/streaming/MediaPlayerFactory');var _MediaPlayerFactory2=_interopRequireDefault(_MediaPlayerFactory);var _Debug=require('./src/core/Debug');var _Debug2=_interopRequireDefault(_Debug);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}/**
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.supportsMediaSource =
+  exports.Debug =
+  exports.MediaPlayerFactory =
+  exports.MetricsReporting =
+  exports.Protection =
+  exports.MediaPlayer =
+    undefined;
+var _index_mediaplayerOnly = require("./index_mediaplayerOnly");
+var _Capabilities = require("./src/streaming/utils/Capabilities");
+var _MetricsReporting = require("./src/streaming/metrics/MetricsReporting");
+var _MetricsReporting2 = _interopRequireDefault(_MetricsReporting);
+var _Protection = require("./src/streaming/protection/Protection");
+var _Protection2 = _interopRequireDefault(_Protection);
+var _MediaPlayerFactory = require("./src/streaming/MediaPlayerFactory");
+var _MediaPlayerFactory2 = _interopRequireDefault(_MediaPlayerFactory);
+var _Debug = require("./src/core/Debug");
+var _Debug2 = _interopRequireDefault(_Debug);
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+/**
  * The copyright in this software is being made available under the BSD License,
  * included below. This software may be subject to other third party and contributor
  * rights, including patent rights, and no such rights are granted under this license.
@@ -27,5 +49,16 @@
  *  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
- */dashjs.Protection=_Protection2.default;dashjs.MetricsReporting=_MetricsReporting2.default;dashjs.MediaPlayerFactory=_MediaPlayerFactory2.default;dashjs.Debug=_Debug2.default;dashjs.supportsMediaSource=_Capabilities.supportsMediaSource;exports.default=dashjs;exports.MediaPlayer=_index_mediaplayerOnly.MediaPlayer;exports.Protection=_Protection2.default;exports.MetricsReporting=_MetricsReporting2.default;exports.MediaPlayerFactory=_MediaPlayerFactory2.default;exports.Debug=_Debug2.default;exports.supportsMediaSource=_Capabilities.supportsMediaSource;
+ */ dashjs.Protection = _Protection2.default;
+dashjs.MetricsReporting = _MetricsReporting2.default;
+dashjs.MediaPlayerFactory = _MediaPlayerFactory2.default;
+dashjs.Debug = _Debug2.default;
+dashjs.supportsMediaSource = _Capabilities.supportsMediaSource;
+exports.default = dashjs;
+exports.MediaPlayer = _index_mediaplayerOnly.MediaPlayer;
+exports.Protection = _Protection2.default;
+exports.MetricsReporting = _MetricsReporting2.default;
+exports.MediaPlayerFactory = _MediaPlayerFactory2.default;
+exports.Debug = _Debug2.default;
+exports.supportsMediaSource = _Capabilities.supportsMediaSource;
 //# sourceMappingURL=index.js.map
