@@ -1,193 +1,158 @@
-* {
-    margin: none; 
-    padding: none ;
+
+body {
+    background-color: #0f0f0f;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    border : 5px dashed red;
+    padding: 0;
+    height: 100vh;
+
 }
-body 
+.contentbody 
 {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    margin:0;
-    background-color:   black;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+.h-10 
+{
+    height: 10%;
+}
+.h-40 
+{
+    height: 60%;
+}
+.text-danger 
+{
+    color: red !important;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.footer 
+{
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 
 }
 
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0% {
+        rotate: 0;
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        rotate: -10deg;
+        filter: hue-rotate(50deg);
+    }
+    50% {
+        rotate: 10deg;
+        filter: hue-rotate(150deg);
+    }
+    75% {
+        rotate: -10deg;
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        rotate: 0;
+        filter: hue-rotate(360deg);
+    }
+    }
+@keyframes huechange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        filter: hue-rotate(50deg);
+    }
+    50% {
+        filter: hue-rotate(150deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.customrow 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    border: 1px dashed red;
+
+}
 .main {
-    width: 60%;
-    border: 1px solid red;
-    height: 80vh;
-    transform: translate(38vw, 10%);
-    position: absolute;
-    border: 2px solid red;
-    border-radius: 5px;
-    font-size: xx-small;
-    display: flex;
-    transition: all 2s ease;
-    justify-content: center;
-    align-items: center;
-}
-.main:hover 
-{
-    background-color: #0f0000;
-    font-size: xx-large;
-    display: flex;
-    color:white;   
-}
-.ball {
-    position: absolute;
-    height: 45px;
-    width: 55px;
-    background-image: url(icons/icons8-dvd-logo-32.png);
-    background-size: cover;
-    border-radius: 50%;
-}
-.info {
-    border: 1px solid red;
-    width: 35%;
-    color: red;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transform: translate(2vw, 10%);
-
-}
-.heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.creds {
-    display: block;
-    bottom: 0%;
-    font-family: 'Courier New', Courier, monospace;
-    display: block;
-    font-size: small;
-    margin: 6px;
-    color: red;
-}
-.creds > a {
-    color: white;
-    text-decoration: dotted;
-}
-footer 
-{
-    display: flex;
-    width: 100vw;
-    position: absolute;
-    top:100%;
-    align-items: baseline;
+    position: relative;
+    overflow: hidden;
     
+    height: 100%;
+    width: 100%;
+    background-color: #0f0f0f; /* Optional: for better visibility of the logo */
 }
-.icons {
-    width: 40%;
-    display: flex;    
-    justify-content: space-around;
-}
-footer >p 
+
+.main,.info 
 {
-    text-align: right;
+    border: 1px dashed red;
+    height: 80vh;
 }
-.color-pink {
-    color:pink
+
+#dvdLogo {
+    position: absolute; /* Required for the movement */
+    width: 50px; /* Ensure this matches the logo width */
+    height: 30px; /* Ensure this matches the logo height */
+    background-image: url('icons/icons8-dvd-logo-32.png');
+    background-size: cover; /* Make sure the background image fits */
 }
-.works {
-    padding: 10%;
-}
-.color-red {
-    color:red;
-}
-small
-{
-    font-size: larger;
-    text-transform: uppercase;
-}
+
+
+
 .tech-icons {
-    clear:both;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-li>a {
-    color: red;
-    text-decoration: none;
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    transition: all 0.5s ease;
+.animated-beat 
+{
+    color:rgba(255, 0, 0, 1)  ; 
+    animation: beating .8s infinite;
+    filter: saturate(.5);
+    transition: 1s ease ;
 }
-  
-.tech-icons img {
-    /* width: 50px; /* Adjust the size according to your preference 
-    height: 50px; */
-    margin: 10px; /* Add some spacing between the icons */
-    color: red;
+.animated-beat:hover 
+{
+    filter: saturate(1) ;
+    animation: shake .5s infinite;
 }
-.techstack, .projects, .works {
-    padding-left:10px;
+.animated-spin {
+    color:rgba(255, 0, 0, 1) ; 
+    filter: saturate(.5);
 }
-a {
-    font-size: larger;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-@keyframes beat {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
-.animated-beat {
-    animation: beat .85s infinite;
-}
-/* make media query for largest of phone display */
-@media screen and (max-width: 480px) {
-    body 
-    {
-        display: flex;
-        flex-direction: column;
-        padding: 10%;
-        justify-content: space-between;
-        
-    }
-    .main 
-    {
-        display: none;
-    }
-    .info {
-        position: absolute;
-        width:80%;
-    }
-    .techstack, .projects, .works {
-        padding-left:10px;
-    }
-    .techstack {
-        min-height:fit-content ;
-    }
-    .tech-icons {
-        margin-top: 5vh;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-    .icons {
-        margin: none;
-        padding: none;
-        padding-left: none;
-        width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        padding-inline-start: 0;
-    }
-    .creds {
-        padding: none;
-        margin: none;
-        width: 80%;
-    }
-    
+.animated-spin:hover 
+{
+    filter: saturate(1) ;
+    animation: huechange .5s infinite;
 }

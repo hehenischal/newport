@@ -31,5 +31,3 @@ const dvdLogo = document.getElementById('dvdLogo');
         function startAnimation() {
             setInterval(animateLogo, 10);
         }
-
-        startAnimation();

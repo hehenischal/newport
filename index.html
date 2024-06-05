@@ -1,202 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-96.png">
-    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-32.png">
-    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-16.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='font-awesome.css'>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-96.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-32.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./icons8-n-ios-16-16.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font-awesome.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Nischal Lamichhane</title>
     <!-- add jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <div class="main" id="particles-js">
-        <div class="ball" id="dvdLogo">
+  </head>
+  <body class="m-2 d-flex  h-100">
+    <div class="container-fluid text-danger contentbody">
+      <div id="loading-screen" class="h-100 d-flex justify-content-center align-items-center">
+        <img src="icons8-n-ios-16-96.png" class="fa-spin" alt="" />
+      </div>
+      <div id="customcontent" class="container-fluid p-0" style="display:none; width: 100% ;height:100%">
+        <main role="main">
+        <div class="row  p-2 g-4 justify-content-around">
+          <div class="main col-md-7 h-40" id="particles-js">
+            <div class="ball" id="dvdLogo"></div>
+          </div>
+          <div class="info col-md-5 p-2">
+            <h1>
+              <p class="h1 text-danger">
+                Nischal Lamichhane <br />
+                <span class="h1 btn btn-danger m-2 " style="font-family: 'Times New Roman', Times, serif">
+                  <a class="text-light" style="text-decoration: none; " href="https://blog.nischallamichhane.com.np">Django Master</a>
+                </span> at heart<br />
+                Django practitioner in real
+              </p>
+            </h1>
+              
+            <div class="color-pink techstack ">
+              <small class="h3">Tech Stack</small>
+              <div class="tech-icons color-red">
+                <i class="animated-beat fa-brands fa-html5 fa-4x "></i>
+                <i class="animated-beat fa-brands fa-css3-alt fa-4x "></i>
+                <i class="animated-beat fa-brands fa-js fa-4x "></i>
+                <i class="animated-beat fa-brands fa-python fa-4x "></i>
+                <span class=" fa-beat fa-spin"><i class="animated-spin fa-brands fa-react fa-4x"></i></span>
+                
+                <i class="animated-beat fa-brands fa-git-alt fa-4x "></i>
+                <img class="animated-beat fa-4x" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR4nO2WTStFURSGHx+RgcGNAYrykbkiESEkA93yEWZSfoAJP8BAmZqamRrKhFIGZoqUgUiUJB8phVt4dbrn1u2093Vs95xSVq3RXnu9z957rXUOOJqgXiCDJ7JiTgSpgI+6aroAnBvWJ8iH6R+Av/EEk4K5gNfHBpBXE1QK2gQDgl5BR+QAgnLBouDYIvbdExwIHgOeDCveLbj5gbAJ4MypCJW+4pSD+O8BBAnBXQ6BV8FLlABLlsRbghZBge9dUQFcGDbtCooCcQ15B5C9t/sNsZEA9FiSlsUFkDRseBcUxgXQZ0laFxdAsyXptCPAz76GSrfXtWGT1xk1DgBXLm24Ykl8L1gWjPu1shgCwHSYse8AKgS3luRhPBvgwbA+khPAM0Gr4Ok3AN7gEnwY1ocIY4I6wabg0xGg2rLeHgogY4ImwYJgQ3AkuPSv1qvwQ8GeYM2PSWZGtmDYAlBLHCZYNYg/C4rjEK+y1NBOHOKlgm3L9c9ELd4o2LeIn3pwUYrPC95y/EV1RiZOGqBEMOufNDhBByMVD4B4A2jKb9H14DckaF/xs4wyCgkHCgAAAABJRU5ErkJggg=="
+                alt="django logo" width="50" height="50" />
+              </div>
+            </div>
+            <div class="color-pink projects h3">
+              <small> Mini-Projects</small>
+              <ul class="color-red">
+                <li>
+                  <a rel="noopener" target="_blank" href="https://calc.nischallamichhane.com.np">Simple frontend Calculator</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://ocr-frontend-teal.vercel.app" rel="noopener">OCR app with api ( in django)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="color-pink works h3">
+              <small>In-progress works</small>
+              <ul>
+                <li>
+                  <a href="https://awalocation.onrender.com"><span style="color: white">Awalocation</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="color-pink works h3">
+              Web Extensions: 
+              <ul>
+                <li>
+                  <a href="https://microsoftedge.microsoft.com/addons/detail/dv-paruwa-v1/gndgnjgdbfjjokjigpcmpbghamcfopld">
+                    <span style="color: white">DV paruwa V1.0</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
-   <div class="info" > 
-    <h1>
-    <p class="heading">
-         Nischal Lamichhane <br>
-    Django Master at heart<br>
-Django pracitioner in real
-    </p>
-    </h1>
-    <center><p style="font-family: 'Times New Roman', Times, serif;"><a style="color: pink; text-decoration: none;" href="https://blog.nischallamichhane.com.np">Django Master's Blog</a></p></center>
-    <div class="color-pink techstack"> <small>Tech Stack</small>
-        <div class="tech-icons color-red">
-            <i class="animated-beat fa-brands fa-html5   fa-2xl"></i>
-            <i class="animated-beat fa-brands fa-css3-alt   fa-2xl"></i>
-            <i class="animated-beat fa-brands fa-js   fa-2xl"></i>
-            <i class="animated-beat fa-brands fa-python   fa-2xl"></i>
-            <i class="animated-beat fa-brands fa-react   fa-2xl"></i>
-            <i class="animated-beat fa-brands fa-git-alt   fa-2xl"></i>
-            <img 
-            class="animated-beat" 
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqElEQVR4nO2WTStFURSGHx+RgcGNAYrykbkiESEkA93yEWZSfoAJP8BAmZqamRrKhFIGZoqUgUiUJB8phVt4dbrn1u2093Vs95xSVq3RXnu9z957rXUOOJqgXiCDJ7JiTgSpgI+6aroAnBvWJ8iH6R+Av/EEk4K5gNfHBpBXE1QK2gQDgl5BR+QAgnLBouDYIvbdExwIHgOeDCveLbj5gbAJ4MypCJW+4pSD+O8BBAnBXQ6BV8FLlABLlsRbghZBge9dUQFcGDbtCooCcQ15B5C9t/sNsZEA9FiSlsUFkDRseBcUxgXQZ0laFxdAsyXptCPAz76GSrfXtWGT1xk1DgBXLm24Ykl8L1gWjPu1shgCwHSYse8AKgS3luRhPBvgwbA+khPAM0Gr4Ok3AN7gEnwY1ocIY4I6wabg0xGg2rLeHgogY4ImwYJgQ3AkuPSv1qvwQ8GeYM2PSWZGtmDYAlBLHCZYNYg/C4rjEK+y1NBOHOKlgm3L9c9ELd4o2LeIn3pwUYrPC95y/EV1RiZOGqBEMOufNDhBByMVD4B4A2jKb9H14DckaF/xs4wyCgkHCgAAAABJRU5ErkJggg==" 
-            alt="django logo">
+      </main>
+        <footer class="footer mt-auto py-2 h-10" style="background-color: #0f0f0f;">
+          <ul class="icons d-flex justify-content-around ">
+            <li>
+              <a href="http://youtube.com/nesscs69" target="_blank" rel="noopener">
+                <i class="fab fa-youtube" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/nischal.from.pokhara/" target="_blank" rel="noopener">
+                <i class="fab fa-facebook" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://steamcommunity.com/id/Heroxaterodai/" target="_blank" rel="noopener">
+                <i class="fab fa-steam" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/hehenischal" target="_blank" rel="noopener">
+                <i class="fab fa-github" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+            <li>
+              <a href="./form.html" target="_self" rel="noopener">
+                <i class="fas fa-envelope" style="color: red; font-size: 40px"></i>
+              </a>
+            </li>
+          </ul>
+          <br />
+          <div class="creds text-center">
+            Created & designed with love by
+            <a href="https://www.nischallamichhane.com.np">Nischal</a>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="color-pink projects"> <small> Mini-Projects</small>
-        <ul class="color-red">
-            <li>
-                <a rel="noopener" target="_blank" href="https://calc.nischallamichhane.com.np">Simple frontend Calculator</a>
-            </li>
-            <li> 
-                <a target="_blank" href="https://ocr-frontend-teal.vercel.app" rel="noopener">OCR app with api ( in django)</a>
-            </li>
-        </ul>
-    </div>
-    <div class="color-pink works" > <small>In-progress works</small>
-        <li>
-            <a href="https://awalocation.onrender.com"><span style="color:white;">Awalocation</span></a>
-        </li>
-    </ul>
-    </div>
-    </div>
-    
-    <footer>
-        <ul class="icons">
-            <li>
-                <a href="http://youtube.com/nesscs69" target="_blank" rel="noopener"><i class="fab fa-youtube" style="color:red; font-size:50px;"></i></a>
-            </li>
-            <li>
-                    <a href="https://www.facebook.com/nischal.from.pokhara/" target="_blank" rel="noopener"><i class='fab fa-facebook' style='color:red; font-size:50px;'></i></a>
-                </li>
-                <li>
-                    <a href="https://steamcommunity.com/id/Heroxaterodai/" target="_blank" rel="noopener"><i class="fab fa-steam" style=" color:red; font-size:50px;"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/hehenischal" target="_blank" rel="noopener"><i class='fab fa-github' style="color:red; font-size:50px;"></i></a>
-                </li>
-                <li>
-                    <a href="" target="_blank" rel="noopener"> <i class='fab fa-linkedin' style="color:red; font-size:50px;"></i></a>
-                </li>
-                <li>
-                    <a href="./form.html" target="_self" rel="noopener"><i class='fas fa-envelope' style="color:red; font-size:50px;"></i></a>
-                </li>
-            </ul>
-            <br>
-            <div class="creds">Created & designed with love by <a href="https://www.nischallamichhane.com.np">Nischal</a><small>(no frameworks used)</small></div> 
-    </footer>   
-    
     <script defer src="./app.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <script defer src="https://kit.fontawesome.com/e2cb9f7807.js" crossorigin="anonymous"></script>
-    <script src="./particles.js" ></script>
+    <script src="./particles.js"></script>
     <script>
-        particlesJS(
-            {
-  "particles": {
-    "number": {
-      "value": 240,
-      "density": {
-        "enable": true,
-        "value_area": 3000
+      function initializeParticles() {
+        particlesJS({
+          particles: {
+            number: {
+              value: 240,
+              density: {
+                enable: true,
+                value_area: 3000,
+              },
+            },
+            color: {
+              value: "#00ffff",
+            },
+            shape: {
+              type: "polygon",
+              stroke: {
+                width: 1,
+                color: "#00ff00",
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+            },
+            opacity: {
+              value: 0.2,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 0.5,
+                opacity_min: 0.1,
+                sync: true,
+              },
+            },
+            size: {
+              value: 4,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 10,
+                size_min: 0.1,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: true,
+              distance: 180,
+              color: "#00ffff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: true,
+                rotateX: 600,
+                rotateY: 600,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 800,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 228,
+                size: 20,
+                duration: 2,
+                opacity: 0.8,
+                speed: 10000,
+              },
+              repulse: {
+                distance: 400,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 5,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
       }
-    },
-    "color": {
-      "value": "#00ffff"
-    },
-    "shape": {
-      "type": "polygon",
-      "stroke": {
-        "width": 1,
-        "color": "#00ff00"
-      },
-      "polygon": {
-        "nb_sides": 5
-      }
-    },
-    "opacity": {
-      "value": 0.2,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 0.5,
-        "opacity_min": 0.1,
-        "sync": true
-      }
-    },
-    "size": {
-      "value": 4,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 10,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 180,
-      "color": "#00ffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": true,
-        "rotateX": 600,
-        "rotateY": 600
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 800,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 228,
-        "size": 20,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 10000
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 5
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-
-        );
     </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
