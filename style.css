@@ -16,6 +16,7 @@ body {
 {
     height: 10%;
 }
+
 .h-40 
 {
     height: 60%;
@@ -23,6 +24,27 @@ body {
 .text-danger 
 {
     color: red !important;
+}
+.color-red {
+    color: red;
+}
+
+.color-pink {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.works {
+    margin-bottom: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 ul 
