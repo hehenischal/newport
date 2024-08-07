@@ -1,0 +1,80 @@
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes shake {
+    0% {
+        rotate: 0;
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        rotate: -10deg;
+        filter: hue-rotate(50deg);
+    }
+    50% {
+        rotate: 10deg;
+        filter: hue-rotate(150deg);
+    }
+    75% {
+        rotate: -10deg;
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        rotate: 0;
+        filter: hue-rotate(360deg);
+    }
+    }
+@keyframes huechange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        filter: hue-rotate(50deg);
+    }
+    50% {
+        filter: hue-rotate(150deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.animated-beat 
+{
+    color:rgba(255, 0, 0, 1)  ; 
+    animation: beating .8s infinite;
+    filter: saturate(.5);
+    transition: 1s ease ;
+}
+.animated-beat:hover 
+{
+    filter: saturate(1) ;
+    animation: shake .5s infinite;
+}
+.animated-spin {
+    color:rgba(255, 0, 0, 1) ; 
+    filter: saturate(.5);
+}
+.animated-spin:hover 
+{
+    filter: saturate(1) ;
+    animation: huechange .5s infinite;
+}
