@@ -52,9 +52,78 @@
 		<!-- Main CSS File -->
 		<link href="assets/css/main.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles.css" />
+		<style>
+			/* Modal Background with Blur */
+			.modal-content {
+				background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+				color: white;
+				border-radius: 15px;
+				box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+			}
+	
+			/* Modal Header */
+			.modal-header {
+				border-bottom: none;
+				text-align: center;
+				justify-content: center;
+			}
+	
+			/* Close Button Styling */
+			.btn-close {
+				filter: invert(1);
+				position: absolute;
+				right: 15px;
+				top: 15px;
+			}
+	
+			/* Fancy Button */
+			.fancy-btn {
+				background: linear-gradient(45deg, #ff416c, #ff4b2b);
+				color: white;
+				border: none;
+				padding: 12px 20px;
+				font-size: 18px;
+				font-weight: bold;
+				border-radius: 8px;
+				transition: all 0.3s ease;
+				text-decoration: none;
+				display: inline-block;
+				box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+			}
+	
+			.fancy-btn:hover {
+				transform: scale(1.05);
+				box-shadow: 0 6px 20px rgba(255, 65, 108, 0.6);
+			}
+	
+			/* Animated Glow */
+			@keyframes glow {
+				0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+				50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+				100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+			}
+	
+			.modal-content {
+				animation: glow 2s infinite alternate;
+			}
+		</style>
 	</head>
 
 	<body class="index-page">
+		<div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content text-center p-4">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-header">
+						<h2 class="modal-title fw-bold" id="consultationModalLabel">🚀 Let's Connect!</h2>
+					</div>
+					<div class="modal-body">
+						<p class="fs-5">Need consultation, guidance, or a collaboration opportunity with me?</p>
+						<a href="https://calendly.com/nischallamichhane/15-min-consultation" title="book a call" class="fancy-btn mt-3" target="_blank">📅 Book a Call</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header id="header" class="header d-flex align-items-center sticky-top">
 			<div
 				class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -1318,5 +1387,11 @@
 
 		<!-- Main JS File -->
 		<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var consultationModal = new bootstrap.Modal(document.getElementById('consultationModal'));
+				consultationModal.show();
+			});
+		</script>
 	</body>
 </html>
